@@ -1,0 +1,58 @@
+.wrap {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button-primary {
+    margin-top: 20px;
+}
+
+#properties {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+/* Add some spacing and styling for the form elements */
+.wrap h1 {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Add some visual feedback for required fields */
+input:required,
+textarea:required {
+    border-left: 3px solid #0073aa;
+}
+
+/* Style the placeholder text */
+::placeholder {
+    color: #999;
+    font-style: italic;
+} 

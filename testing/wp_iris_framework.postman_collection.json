@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "965d52ce-67e8-4b86-b5c8-02967e5c4d7a",
+		"name": "WP Iris Framework",
+		"description": "API for WP Iris Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39957991"
+	},
+	"item": [
+		{
+			"name": "Updating a Product Example",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"9\",\n    \"productName\": \"Biotinylated Human TNF-alpha Antibody\",\n    \"catalogNumber\": \"BH-TNFa-051\",\n    \"target\": \"Tumor Necrosis Factor alpha\",\n    \"hostSpecies\": \"Human\",\n    \"applications\": \"ELISA, Western Blot\",\n    \"citationPMID\": \"PMID:689468\",\n    \"productClass\": {\n        \"id\": \"1\",\n        \"className\": \"Avidin-Biotin Reagents\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62773/csp/wpapi/wp/biotech/product/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62773",
+					"path": [
+						"csp",
+						"wpapi",
+						"wp",
+						"biotech",
+						"product",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetching a Product by ID Example",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62773/csp/wpapi/wp/biotech/product/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62773",
+					"path": [
+						"csp",
+						"wpapi",
+						"wp",
+						"biotech",
+						"product",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating a Product Example",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productName\": \"Anti-Mouse PD-1 Monoclonal Antibody (Clone RMP1-14)\",\n    \"catalogNumber\": \"MM-PD1-075\",\n    \"target\": \"Programmed Cell Death Protein 1 (PD-1)\",\n    \"hostSpecies\": \"Mouse\",\n    \"applications\": \"Flow Cytometry, IHC\",\n    \"citationPMID\": \"PMID:21276665\",\n    \"productClass\": {\n        \"className\": \"Monoclonal Antibodies\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:62773/csp/wpapi/wp/biotech/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62773",
+					"path": [
+						"csp",
+						"wpapi",
+						"wp",
+						"biotech",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetching All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:62773/csp/wpapi/wp/biotech/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62773",
+					"path": [
+						"csp",
+						"wpapi",
+						"wp",
+						"biotech",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
