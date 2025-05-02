@@ -14,17 +14,18 @@ do ##class(Security.Services).Modify("%Service_CallIn",.prop)
 // create IRISAPP namespace
 do $SYSTEM.OBJ.Load("/home/irisowner/dev/App.Installer.cls", "cbuk")
 set sc = ##class(App.Installer).setup()
-do ##class(%SYSTEM.Process).CurrentDirectory("$PWD")
-$@
-if '\$Get(sc) do ##class(%SYSTEM.Process).Terminate(, 1)
-zn "%SYS"
-do ##class(SYS.Container).QuiesceForBundling()
-Do ##class(Security.Users).UnExpireUserPasswords("*")
-s props("Database")="HSLIB",sc=##Class(Config.MapPackages).Create("%ALL","HS",.props)
-do ##class(%EnsembleMgr).EnableNamespace("IRISAPP")
+
+//do ##class(%SYSTEM.Process).CurrentDirectory("$PWD")
+//$@
+//if '\$Get(sc) do ##class(%SYSTEM.Process).Terminate(, 1)
+//zn "%SYS"
+//do ##class(SYS.Container).QuiesceForBundling()
+//Do ##class(Security.Users).UnExpireUserPasswords("*")
+//s props("Database")="HSLIB",sc=##Class(Config.MapPackages).Create("%ALL","HS",.props)
+//do ##class(%EnsembleMgr).EnableNamespace("IRISAPP")
 
 zn "IRISAPP"
-set ^UnitTest("TestDirectory")="/opt/irisapp"    
+//set ^UnitTest("TestDirectory")="/opt/irisapp"    
 zpm "load /home/irisowner/dev/ -v":1:1
     
 halt
