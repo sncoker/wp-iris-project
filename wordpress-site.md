@@ -47,6 +47,11 @@ The WP IRIS Biotech Interface provides several key features:
    - Clear existing SEO values
    - View last import date
 
+### To View Sample SEO Data
+1. Click "Pages" in the menu
+2. Click the link for "Anti-Human CD3 Monoclonal Antibody (Clone UCHT1)"
+3. Look for the Yoast SEO window to view the imported SEO data (if the import has been done)
+
 ## WP IRIS Code Generator
 
 The WP IRIS Code Generator helps you create IRIS classes from your mySQL database structure.
