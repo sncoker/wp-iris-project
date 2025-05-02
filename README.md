@@ -26,7 +26,7 @@ The biotech SEO demo (included) shows how to auto-generate metadata, but the fra
 ## Installation with Docker 
 
 ## Prerequisites
-Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed. Depending on your OS, please update docker-compose.yml image value for your **mySQL server (Amd64 vs Arm64 architecture)**.
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
 Clone/git pull the repo into any local directory e.g. like it is shown below:
 
@@ -39,8 +39,6 @@ Open the terminal in this directory and run:
 ```bash
 $ docker-compose up -d --build
 ```
-
-Note: Make sure you have enough virtual disk space allocated to Docker to run the mySQL instance.
 
 ## Management portal: 
 
